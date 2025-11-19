@@ -1,0 +1,9 @@
+name: lab2
+on: push
+  jobs:
+    - name: buid
+      runs-on: ubuntu-latest
+      steps:    
+        uses: actions/checkout@v3
+        run: echo "Heloo Feom Lab 2"
+        run: ls -la
