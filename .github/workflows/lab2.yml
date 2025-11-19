@@ -1,9 +1,11 @@
 name: lab2
 on: push
-  jobs:
-    - name: buid
+jobs:
+  build:
+    name: build
       runs-on: ubuntu-latest
       steps:    
-        uses: actions/checkout@v3
-        run: echo "Heloo Feom Lab 2"
-        run: ls -la
+        - uses: actions/checkout@v3
+        - run: |
+            echo "Helo From Lab 2" 
+            ls -la
