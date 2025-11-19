@@ -1,0 +1,9 @@
+name: Simple WorkFlow
+on: push
+jobs:
+    build:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Step 1
+          run: echo "my first github action"
+      
