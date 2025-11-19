@@ -3,8 +3,8 @@ on: push
 jobs:
   build:
     name: build
-      runs-on: ubuntu-latest
-      steps:    
+    runs-on: ubuntu-latest
+    steps:    
         - uses: actions/checkout@v3
         - run: |
             echo "Helo From Lab 2" 
